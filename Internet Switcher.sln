@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Internet Switcher", "Internet Switcher\Internet Switcher.csproj", "{BE5725B6-4CDB-4196-A601-8ABFA048B352}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE5725B6-4CDB-4196-A601-8ABFA048B352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE5725B6-4CDB-4196-A601-8ABFA048B352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE5725B6-4CDB-4196-A601-8ABFA048B352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE5725B6-4CDB-4196-A601-8ABFA048B352}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

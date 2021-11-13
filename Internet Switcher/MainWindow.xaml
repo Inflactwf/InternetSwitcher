@@ -1,0 +1,35 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="Main" mc:Ignorable="d" x:Class="Internet_Switcher.MainWindow"
+        Title="Internet Switcher" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize" Icon="InternetSwitcher.ico" WindowStartupLocation="CenterScreen" IsHitTestVisible="True" d:DesignHeight="250">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/GeoBG.jpg"/>
+    </Window.Background>
+    <Grid x:Name="GridBG" Margin="0,0,-2,-19" Height="245">
+        <Grid.Effect>
+            <DropShadowEffect ShadowDepth="2"/>
+        </Grid.Effect>
+        <Button x:Name="ChooseButton" Content="Изменить" HorizontalAlignment="Center" Margin="111,13,202,0" VerticalAlignment="Top" Width="112" Height="39" Click="ChooseButton_Click" BorderThickness="0"/>
+        <Rectangle Fill="White" Height="39" Margin="81,57,171,0" Stroke="Black" VerticalAlignment="Top" Width="173" HorizontalAlignment="Center"/>
+        <Label x:Name="KeyLabel" Content="V" HorizontalAlignment="Left" Margin="81,57,0,0" VerticalAlignment="Top" Width="174" Height="39" Padding="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="LBL1" Content="Время до выключения:" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top" Width="148" Height="18" Padding="0" Foreground="White"/>
+        <Label x:Name="LBL2" Content="Время после выключения:" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top" Width="148" Height="18" Padding="0" Foreground="White"/>
+        <TextBox x:Name="TimeBeforeStartTxtBox" HorizontalAlignment="Left" Height="19" Margin="172,161,0,0" TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="46"/>
+        <TextBox x:Name="TimeAfterStartTxtBox" HorizontalAlignment="Left" Height="19" Margin="172,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" Text="500"/>
+        <Button x:Name="BeforeButton" Content="OK" HorizontalAlignment="Center" Margin="220,161,164,0" VerticalAlignment="Top" Width="41" Height="19" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="10" Click="BeforeButton_Click" BorderThickness="0"/>
+        <Button x:Name="AfterButton" Content="OK" HorizontalAlignment="Center" Margin="220,185,164,0" VerticalAlignment="Top" Width="41" Height="19" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="10" Click="AfterButton_Click" BorderThickness="0"/>
+        <GroupBox x:Name="OffBox" Header="ON" HorizontalAlignment="Left" Margin="306,23,0,0" VerticalAlignment="Top" Height="60" Width="85" Foreground="DarkGreen" BorderThickness="0.8">
+            <Slider x:Name="OnOffSlider" HorizontalAlignment="Left" Margin="4,10,0,0" VerticalAlignment="Top" Width="63" Maximum="1" LargeChange="0.2" ValueChanged="Slider_ValueChanged" Value="1"/>
+        </GroupBox>
+        <Label x:Name="LBL1_Copy" Content="Текущее:" HorizontalAlignment="Left" Margin="289,162,0,0" VerticalAlignment="Top" Width="58" Height="18" Padding="0" Foreground="White"/>
+        <TextBox x:Name="CurrentTimeBefore" HorizontalAlignment="Left" Height="19" Margin="353,161,0,0" TextWrapping="Wrap" Text="null" VerticalAlignment="Top" Width="46" BorderThickness="0"/>
+        <TextBox x:Name="CurrentTimeAfter" HorizontalAlignment="Left" Height="19" Margin="353,185,0,0" TextWrapping="Wrap" Text="null" VerticalAlignment="Top" Width="46" BorderThickness="0"/>
+        <Label x:Name="LBL1_Copy1" Content="Текущее:" HorizontalAlignment="Left" Margin="289,186,0,0" VerticalAlignment="Top" Width="57" Height="18" Padding="0" Foreground="White"/>
+        <Separator HorizontalAlignment="Left" Height="6" Margin="10,143,0,0" VerticalAlignment="Top" Width="405"/>
+        <Label x:Name="LBL1_Copy2" Content="Адаптер:" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top" Width="55" Height="18" Padding="0" Foreground="White"/>
+        <TextBox x:Name="AdapterNameBox" HorizontalAlignment="Left" Height="19" Margin="70,115,0,0" TextWrapping="Wrap" Text="Ethernet" VerticalAlignment="Top" Width="268" IsEnabled="False"/>
+        <Button x:Name="SaveAdapterBtn" Content="Изменить" HorizontalAlignment="Center" Margin="343,115,26,0" VerticalAlignment="Top" Width="56" Height="19" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="10" BorderThickness="0" Click="SaveAdapterBtn_Click"/>
+
+    </Grid>
+</Window>
